@@ -47,7 +47,7 @@ void readInfoFromFile() {
 // Функція для збереження інформації у файл
 void saveArrInFile() {
     ofstream file("library.txt");
-    for (int i = 0; i < bookCount; i++) {
+    for (int i = 0; i < bookCount; i++) { // Через цикл for проходимося по усім книгам для збереження їх у файл
         file << library[i].id << endl;
         file << library[i].title << endl;
         file << library[i].author << endl;
@@ -268,9 +268,6 @@ void countBooksOfGenre(string genre) {
     cout << "Count of books of some genre: " << count << endl;
     cout << "" << endl;
     return;
-    cout << "" << endl;
-    cout << "There isn't that genre" << endl;
-    cout << "" << endl;
 }
 
 // Функція для виведення повної інформації про книгу за роком
